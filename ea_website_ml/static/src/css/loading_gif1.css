@@ -1,0 +1,9 @@
+.o_theme_install_loader_gif {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 220px;
+    background-image: url('/ea_website_ml/static/src/img/theme_loader.gif');
+    background-size: cover;
+    border-radius: 6px;
+}

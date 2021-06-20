@@ -1,0 +1,24 @@
+<odoo>
+        <data>
+                <record id="views_res_users_form_inherited" model = "ir.ui.view">
+                        <field name ="name">res.users.form.inherited"</field>
+                        <field name = "model">res.users</field>
+                        <field name ="inherit_id" ref = "base.view_users_form"/>
+                        <field name = "arch" type="xml">
+                        <group>
+                                <label for="theme_select" class="oe_edit_only"/>
+                                <xpath expr="//field[@name='name']" position= "after">
+                                        <field name="theme_select"/>
+                                        <group>
+                                                <button name="go_to_website"
+                                                type="object"
+                                                string="Select theme"
+                                                class="btn-primary"
+                                                /> 
+                                        </group>                
+                                </xpath>
+                        </group>
+                        </field> 
+                </record>
+        </data>
+</odoo>  

@@ -1,0 +1,57 @@
+id,name,sub_id,main_id
+mldata_1,select subcategory,0,0
+mldata_2,Business-to-Business,1,1
+mldata_3,Household Employment,2,1
+mldata_4,Tax Negotiation and Representation,3,1
+mldata_5,CPE For CPAs,4,1
+mldata_6,crafts,5,2
+mldata_7,drawing and art gallery,6,2
+mldata_8,photography,7,2
+mldata_9,production services,8,2
+mldata_10,Electric Vehicles,9,3
+mldata_11,Car rentals,10,3
+mldata_12,Parts and Accessories,11,3
+mldata_13,Blogs,12,4
+mldata_14,Agrochemicals,13,5
+mldata_15,Biochemicals,14,5
+mldata_16,Laboratory Reagents,15,5
+mldata_17,Cleaning Agents,16,5
+mldata_18,Basic Chemicals,17,5
+mldata_19,Real Estate,18,6
+mldata_20,Interior Designing,19,6
+mldata_21,Architects,20,6
+mldata_22,Materials and Supplies,21,6
+mldata_23,Maintenance,22,6
+mldata_24,commercial contractors,23,6
+mldata_25,Agriculture and Foresty,24,7
+mldata_26,Financial Services,25,7
+mldata_27,Food and related products,26,7
+mldata_28,Development Agencies,27,7
+mldata_29,Housing,28,7
+mldata_30,Retail Trade,29,7
+mldata_31,CRM,30,8
+mldata_32,Store,31,8
+mldata_33,Bakery,32,9
+mldata_34,Food Recipies,33,9
+mldata_35,Restaurant,34,9
+mldata_36,Hotels and motels,35,10
+mldata_37,Travel,36,10
+mldata_38,Food services,37,10
+mldata_39,consulting,38,11
+mldata_40,Information Brokers,39,11
+mldata_41,Library services,40,11
+mldata_42,Market Research,41,11
+mldata_43,Outsourcing,42,12
+mldata_44,Marketing and Advertising,43,12
+mldata_45,portfolio,44,13
+mldata_46,cv,45,13
+mldata_47,printing services,46,14
+mldata_48,publishing services,47,14
+mldata_49,Agents and Agencies,48,15
+mldata_50,Legal Departmental,49,15
+mldata_51,Property Management,50,15
+mldata_52,Residential,51,15
+mldata_53,commercial,52,15
+mldata_54,textiles services,53,16
+mldata_55,Dyestuffs and chemicals,54,16
+mldata_56,Fibers,55,16

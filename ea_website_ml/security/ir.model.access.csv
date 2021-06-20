@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mldatamain,access.mldatamain,model_mldatamain,,1,1,1,1
+access_mldatasub,access.mldatasub,model_mldatasub,,1,1,1,1
+access_mldatanav,access.mldatanav,model_mldatanav,,1,1,1,1
+access_mldata,access_mldata,model_mldata,,1,1,1,1
+

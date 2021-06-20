@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_create_mldata" model ="ir.actions.act_window">
+        <field name="name">Mldata</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mldata</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new mldata !
+            </p>
+        </field>
+    </record>
+
+    <record id="action_create_main" model ="ir.actions.act_window">
+        <field name="name">Main</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mldatamain</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new Main !
+            </p>
+        </field>
+    </record> 
+
+    <record id="action_create_sub" model ="ir.actions.act_window">
+        <field name="name">Sub</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mldatasub</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new Sub !
+            </p>
+        </field>
+    </record>
+    
+    <record id="action_create_nav" model ="ir.actions.act_window">
+        <field name="name">Nav</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mldatanav</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new Nav bar !
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="mldata_root" name="Mldata" action="action_create_mldata" sequence="1"/>
+    <menuitem id="mldata_main" name="Main" parent="mldata_root" action="action_create_main" sequence="2"/>
+    <menuitem id="mldata_sub" name="Sub" parent="mldata_root" action="action_create_sub" sequence="3"/>
+    <menuitem id="mldata_nav" name="Nav" parent="mldata_root" action="action_create_nav" sequence="4"/>
+    
+   
+    
+    <record id="views_mldata_form" model ="ir.ui.view">
+        <field name="name">mldata.form</field>
+        <field name="model">mldata</field>
+        <field name="arch" type="xml"> 
+            <form string ="Mldata">
+                <sheet> 
+                    <group>
+                        <field name="mlwebsite_category"/>
+                        <field name="mlwebsite_subcategory"/>
+                        <field name="mlwebsite_navbar"/>
+                        <field name="feedback"/>
+                        <field name="selected_theme"/>
+                        <field name="pos1"/>
+                        <field name="pos2"/>
+                        <field name="pos3"/>
+                        <field name="pos4"/>
+                        <field name="pos5"/>
+                    </group>
+                </sheet>
+            </form>
+        </field> 
+    </record>
+
+    <record id="views_main_form" model ="ir.ui.view">
+        <field name="name">main.form</field>
+        <field name="model">mldatamain</field>
+        <field name="arch" type="xml"> 
+            <form string ="Main">
+                <sheet> 
+                    <group>
+                        <field name="name"/>
+                        <field name="main_id"/>
+                        <!-- <field name="number"/> -->
+                    </group>
+                </sheet>
+            </form>
+        </field> 
+    </record>
+
+    <record id="views_sub_form" model ="ir.ui.view">
+        <field name="name">sub.form</field>
+        <field name="model">mldatasub</field>
+        <field name="arch" type="xml"> 
+            <form string ="Sub">
+                <sheet> 
+                    <group>
+                        <field name="name"/>
+                        <field name="sub_id"/>
+                        <field name="main_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field> 
+    </record>
+
+    <record id="views_nav_form" model ="ir.ui.view">
+        <field name="name">nav.form</field>
+        <field name="model">mldatanav</field>
+        <field name="arch" type="xml"> 
+            <form string ="Main">
+                <sheet> 
+                    <group>
+                        <field name="name"/>
+                        <field name="nav_id"/>
+                        <!-- <field name="number_nav"/> -->
+                    </group>
+                </sheet>
+            </form>
+        </field> 
+    </record>
+    ​
+    <record id="views_mldata_tree" model ="ir.ui.view">
+        <field name="name">mldata.tree</field>
+        <field name="model">mldata</field>
+        <field name="arch" type="xml"> 
+        <tree>
+            <field name="mlwebsite_category"/>
+            <field name="mlwebsite_subcategory"/>
+            <field name="mlwebsite_navbar"/>
+            <field name="feedback"/>
+            <field name="selected_theme"/>
+            <field name="pos1"/>
+            <field name="pos2"/>
+            <field name="pos3"/>
+            <field name="pos4"/>
+            <field name="pos5"/>
+        </tree>
+        </field> 
+    </record>
+
+    <record id="views_main_tree" model ="ir.ui.view">
+        <field name="name">mldatamain.tree</field>
+        <field name="model">mldatamain</field>
+        <field name="arch" type="xml"> 
+        <tree>            
+            <field name="name"/>
+            <field name="main_id"/>
+            <!-- <field name="number"/> -->
+        </tree>
+        </field> 
+    </record>
+
+    <record id="views_sub_tree" model ="ir.ui.view">
+        <field name="name">mldatasub.tree</field>
+        <field name="model">mldatasub</field>
+        <field name="arch" type="xml"> 
+        <tree>
+            <field name="name"/>
+            <field name="sub_id"/>
+            <field name="main_id"/>
+        </tree>
+        </field> 
+    </record>
+
+    <record id="views_nav_tree" model ="ir.ui.view">
+        <field name="name">mldmldatanav.tree</field>
+        <field name="model">mldatanav</field>
+        <field name="arch" type="xml"> 
+        <tree>
+            <field name="name"/>
+            <field name="nav_id"/>
+        </tree>
+        </field> 
+    </record>
+
+</odoo> 

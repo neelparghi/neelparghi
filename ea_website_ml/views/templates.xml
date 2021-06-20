@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+	<!-- Adds all assets in Odoo -->
+        <template id="assets_frontend"  inherit_id="website.assets_frontend" name="website assets">
+            <xpath expr="." position="inside">
+		        <!-- All links to CSS and JS files should be added in here. -->
+                <link rel="stylesheet" type="text/scss" href="/ea_website_ml/static/src/scss/loading_gif.scss"/>
+                <!-- <link rel="stylesheet" type="text/css" href="/ea_website_ml/static/src/css/responsive.css"/> -->
+                
+                <script type="text/javascript" src="/ea_website_ml/static/src/js/landingpage.js"/>
+                <script type="text/javascript" src="/ea_website_ml/static/src/js/websitehomepage.js"/>
+                <script type="text/javascript" src="/ea_website_ml/static/src/js/theme_preview_form_test.js"/>
+                <!-- <script type="text/javascript" src="/ea_website_ml/static/src/js/mainpage.js"/> -->
+            </xpath>
+        </template>
+    </data>
+</odoo>

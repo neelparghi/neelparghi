@@ -1,0 +1,18 @@
+id,name,main_id
+mldata_1,Select Main Category,0
+mldata_2,Accounting,1
+mldata_3,Arts and Entertainment,2
+mldata_4,Automotive,3
+mldata_5,Blogs,4
+mldata_6,Chemicals,5
+mldata_7,Construction and maintenance,6
+mldata_8,Coopretives,7
+mldata_9,E-commerce,8
+mldata_10,Food and Restaurants,9
+mldata_11,Hospitality,10
+mldata_12,Information Service,11
+mldata_13,Informationd and Technology,12
+mldata_14,Portfolio and cv,13
+mldata_15,Publishing and Printing,14
+mldata_16,Real Estate,15
+mldata_17,Textiles and Business,16

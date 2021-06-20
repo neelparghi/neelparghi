@@ -1,0 +1,97 @@
+<odoo>
+    <data>
+        <template id="replace_footer" inherit_id="website.layout" name="Footer">
+            <xpath expr="//div[@id='footer']" position="replace">
+                <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                    <footer>
+                        <hr/>
+                        <hr/>
+                        <section class="s_text_block pb32" data-snippet="s_text_block" data-name="Text">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <p>Easeness website Builder</p>
+                                    </div>
+                                    <div class="col-lg-3 offset-lg-1">
+                                        <p class="text-muted"><b>Dreambits Technology</b> <br/> Ahemdabad, Gujarat <br/>India</p>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <ul class="list-unstyled mb-2">
+                                            <li><i class="fa fa-phone fa-fw mr-2"/><span class="o_force_ltr"><a href="tel:+1 (650) 691-3277">+91 7954748115</a></span></li>
+                                            <li><i class="fa fa-envelope fa-fw mr-2"/><span><a href="mailto:hello@mycompany.com">Easeness@business.in</a></span></li>
+                                        </ul>
+                                        <div class="s_share text-left no_icon_color" data-name="Social Media">
+                                            <h5 class="s_share_title d-none">Follow us</h5>
+                                            <a href="/website/social/github" class="s_share_github" target="_blank">
+                                                <i class="fa fa-2x fa-github m-1"/>
+                                            </a>
+                                            <a href="/website/social/twitter" class="s_share_twitter" target="_blank">
+                                                <i class="fa fa-2x fa-twitter m-1"/>
+                                            </a>
+                                            <a href="/website/social/instagram" class="s_share_instagram" target="_blank">
+                                                <i class="fa fa-2x fa-instagram m-1"/>
+                                            </a>
+                                            <a href="/" class="text-800 float-right">
+                                            <i class="fa fa-home rounded-circle shadow-sm"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </footer>
+                </div>
+            </xpath>
+        </template>
+        <!-- <template id="footer_custom" inherit_id="website.layout" name="Default" active="False">
+            <xpath expr="//div[@id='footer']" position="replace">
+                <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                    <section class="s_text_block pt40 pb16" data-snippet="s_text_block" data-name="Text">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-2 pt24 pb24">
+                                    <h5 class="mb-3">Useful Links</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="#">Products</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Legal</a></li>
+                                        <li><a href="/contactus">Contact us</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-5 pt24 pb24">
+                                    <h5 class="mb-3">About us</h5>
+                                    <p>Hello</p>
+                                </div>
+                                <div id="connect" class="col-lg-4 offset-lg-1 pt24 pb24">
+                                    <h5 class="mb-3">Connect with us</h5>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-comment fa-fw mr-2"/><span><a href="/contactus">Contact us</a></span></li>
+                                        <li><i class="fa fa-envelope fa-fw mr-2"/><span><a href="mailto:info@yourcompany.example.com">info@yourcompany.example.com</a></span></li>
+                                        <li><i class="fa fa-phone fa-fw mr-2"/><span class="o_force_ltr"><a href="tel:+1 (650) 691-3277">+1 (650) 691-3277</a></span></li>
+                                    </ul>
+                                    <div class="s_share text-left" data-name="Social Media">
+                                        <h5 class="s_share_title d-none">Follow us</h5>
+                                        <a href="/website/social/facebook" class="s_share_facebook" target="_blank">
+                                            <i class="fa fa-facebook rounded-circle shadow-sm"/>
+                                        </a>
+                                        <a href="/website/social/twitter" class="s_share_twitter" target="_blank">
+                                            <i class="fa fa-twitter rounded-circle shadow-sm"/>
+                                        </a>
+                                        <a href="/website/social/instagram" class="s_share_instagram" target="_blank">
+                                            <i class="fa fa-instagram rounded-circle shadow-sm"/>
+                                        </a>
+                                        <a href="/" class="text-800 float-right">
+                                            <i class="fa fa-home rounded-circle shadow-sm"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </xpath>
+        </template> -->
+    </data>    
+</odoo>

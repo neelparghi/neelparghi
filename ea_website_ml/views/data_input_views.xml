@@ -1,0 +1,249 @@
+<odoo>
+    <template id="data_details" name="Input data">
+        <t t-call="website.login_layout">
+            <t t-set="additional_title">Inputs Details</t>
+            <div class="mldata">
+            <section class="s_process_steps pt24 pb24 o_colored_level" data-snippet="s_process_steps" data-name="Steps">
+            <!-- <span class="s_parallax_bg oe_img_bg" style="background-image: url(&quot;/web/image/416-bcec21a0/diary-968592_1920.jpg&quot;);" data-snippet="s_process_steps" data-name="Steps" data-oe-model="ir.ui.view" data-oe-id="994" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[1]" data-note-id="1" data-original-id="323" data-original-src="/web/image/323-08ae3b4d/diary-968592_1920.jpg" data-mimetype="image/jpeg" data-resize-width="1920" data-quality="100"></span> -->
+        <div class="container">
+          <div class="row no-gutters" id="Row">
+                  <!-- Business details section-->
+              <div class="col-lg-3 s_process_step pt24 pb24 o_colored_level step-1">
+                <div class="s_process_step_icon">
+                  <span>
+                    <i class="fa fa-address-card fa-2x mx-auto rounded-circle "></i>
+                  </span>
+                </div>
+                <div class="business-details">
+                  <div class="s_process_step_content text-center">
+                    <h2 class="o_default_snippet_text">Business <br/>Details</h2>
+                    <p class="o_default_snippet_text">
+                      <ul>
+                        Your Business Details
+                        <br/> 
+                        Setup Your Business Profile
+                      </ul>
+                    </p>                  
+                  </div>
+                </div>
+              </div>
+            <!-- website Preferences section-->
+                <div class="col-lg-3 s_process_step pt24 pb24 o_colored_level step-2">
+                  <div class="s_process_step_icon">
+                    <span>
+                      <i class="fa fa-desktop fa-2x mx-auto rounded-circle " data-original-title="" title="" aria-describedby="tooltip106368"></i>
+                    </span>
+                  </div>
+                    <div class="webiste_preferences">
+                      <div class="s_process_step_content text-center">
+                        <h2 class="o_default_snippet_text">Website <br/>Preferences</h2>
+                        <p class="o_default_snippet_text">
+                          <ul>
+                            Select the design of theme 
+                            <br/>
+                            Select category, sub category and Navigationbar style
+                          </ul>  
+                        </p>
+                      </div>
+                    </div> 
+                </div>
+
+                <!-- Additional features section-->
+                <div class="col-lg-3 s_process_step pt24 pb24 o_colored_level step-3">
+                  <div class="s_process_step_icon">
+                    <span>
+                      <i class="fa fa-th-large fa-2x mx-auto rounded-circle " data-original-title="" title="" aria-describedby="tooltip139688"></i>
+                    </span>
+                  </div>
+                  <div class="additional_features">
+                      <div class="s_process_step_content text-center">
+                        <h2 class="o_default_snippet_text">Additional <br/> Features</h2>
+                        <p class="o_default_snippet_text">
+                          <ul>
+                            Try Additional Features
+                            <br/>
+                            Add Extra Feature to Your Website
+                          </ul>
+                        </p>
+                      </div>
+                    </div>  
+                </div>
+            <!-- <div class="col-lg-3 s_process_step pt24 pb24 o_colored_level">
+              <div class="s_process_step_icon">
+                <span>
+                  <i class="fa fa-plane fa-2x mx-auto rounded-circle bg-o-color-3"></i>
+                </span>
+              </div>
+              <div class="s_process_step_content text-center">
+                <h2 class="o_default_snippet_text">Get Delivered</h2>
+                <p class="o_default_snippet_text">Select and delete blocks <br/>to remove some steps.</p>
+              </div>
+            </div>-->
+          </div> 
+        </div>
+      </section>                 
+                <div class="container" >
+                  <form action="/builder/register/process" method="post">
+                      <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                      <div class="row o_portal_details">                            
+                        <div class="col-md-6"> 
+
+                          <!-- main category -->
+                          <div class="container_content container_content-1 form-row">
+                            <div class="form-group col-md-6">
+                              <label class="col-form-label" for="name">Business Name</label>  
+                              <br/> 
+                                <input type="text" id="bname" name="bname" class="form-control" placeholder="Your Business Name.." style="autofocus"/>
+                              <!-- <br/> -->
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label class="col-form-label" for="Email">Business Email id</label>  
+                              <br/> 
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Your Business Email id.." style="autofocus"/>
+                              <!-- <br/>                                             -->
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label class="col-form-label" for="name">Contact No.</label>  
+                              <br/> 
+                                <input type="tel" id="contact" name="contact" class="form-control" placeholder="Your Contact number.." style="autofocus"/>
+                              <!-- <br/> -->
+                            </div>
+                            <br/>
+                            <label class="col-lg-10" for="name">Business Address</label>  
+                            <br/> 
+                              <input type="address" id="address" name="address" class="form-control" placeholder="Your Business Address.." style="autofocus"/>
+                            <br/>
+                            <br/>
+                            <br/>
+
+                              <div>
+                                  <!-- previous button-->
+                                <div class="row1">
+                                    <!-- Next button-->
+                                  <a href="#" class="btn btn-primary float-right mb32 step-2">
+                                    Next
+                                    <span class="fa fa-long-arrow-right" />
+                                  </a>
+                                </div>
+                              </div>
+                          </div>  
+                          
+                          <!-- Main category -->
+                          <div class ="container_content container_content-2">  
+                            <label class="col-form-label" for="mlwebsite_category">Main Category</label>                                
+                              <select id ="mlwebsite_category" name= "mlwebsite_category" class="form-control col-md-8">
+                                <t t-foreach="main" t-as="c">
+                                    <option t-att-value="c.main_id if c.main_id else '0'">
+                                        <t t-esc="c.name"/>
+                                    </option>
+                                </t>                        
+                              </select>
+                              
+                              <br/>
+
+                            <!-- sub category -->
+                            <label class="col-form-label " for="mlwebsite_subcategory" > Sub Category</label>
+                              <select name= "mlwebsite_subcategory" class="form-control col-md-8" id="mlwebsite_subcategory">
+                                <t t-foreach="sub" t-as="c">
+                                    <option t-att-value="c.sub_id if c.sub_id else '0'">
+                                        <t t-esc="c.name"/>
+                                    </option>
+                                </t>
+                              </select>
+                            
+                              <br/>
+                            
+                            <!-- Navigation bar -->
+                            <label class="col-form-label" for="mlwebsite_navbar" >Navigation Bar</label>
+                              <select name= "mlwebsite_navbar" class="form-control col-md-8" id="mlwebsite_navbar">
+                                  
+                                <t t-foreach="nav" t-as="c">
+                                    <option t-att-value="c.nav_id if c.nav_id else '0'">
+                                        <t t-esc="c.name" />
+                                    </option>
+                                </t>
+                              </select>
+                              <br/>
+                                <div class="container">
+                                  <!-- <img src= "/ea_website_builder/static/src/img/hamburgerbar.jpg" width="280" height="220"/>
+                                  <img src= "/ea_website_builder/static/src/img/stickybar.jpg" width="320" height="220"/>
+                                  <img src= "/ea_website_builder/static/src/img/fullpagebar.jpg" width="300" height="220"/> -->
+                                </div>
+                                <!-- <br/> -->
+                                <!-- <label class="col-form-label" for="color">color</label>  
+                                <br/>                               -->
+                                <!-- <select name= "color" class="form-control">
+                                  <t t-foreach="[{'id':1,'name':'red'},{'id':2,'name':'green'},{'id':3,'name':'blue'},{'id':4,'name':'black'}]" t-as="state">
+                                    <option t-att-value = "state['id']">
+                                    <t t-esc = "state['name']"/>
+                                    </option>
+                                  </t>
+                                </select> -->
+                                <br/>
+                                <div >
+                                  <!-- previous button-->
+                                  <div class="row2 col-md-8">
+                                    <a href="$" class="btn btn-primary float-left mb32 step-1">
+                                      <span class="fa fa-long-arrow-left" />
+                                      Back
+                                    </a>
+                                    <!-- Next button-->
+                                    <a href="#" class="btn btn-primary float-right mb32 step-3">
+                                      <span class="fa fa-long-arrow-right" />
+                                      Next
+                                    </a>
+                                  </div>
+                                </div>
+                          </div>
+                              <br/>
+
+                            <!-- Additional features -->
+                            <div class="container_content container_content-3">
+                              <fieldset>
+                                <label class="col-form-label" for="additional_features"> <legend>Additional Features:</legend></label>  
+                                  
+                                <br/> 
+                                <input type="checkbox" class="btn-check" id="blogs" name="add_feature1"/>
+                                <label class="btn btn-outline-secondary text-dark col-md-3" for="blogs"> Blogs</label><br/><br/>
+                                
+                                <input type="checkbox" class="btn-check" id="ecommerce" name="add_feature2"/>
+                                <label class="btn btn-outline-secondary text-dark" for="ecommerce"> eCommerce Store</label><br/><br/>
+                                
+                                <!-- <input type="checkbox" class="btn-check" id="livechatsupport" name="add_feature3"/>
+                                <label class="btn btn-outline-secondary text-dark" for="livechatsupport">Live Chat Support</label><br/> -->
+                              </fieldset>
+                              <br/>
+                              <br/>
+
+                              <div>
+                                  <!-- previous button-->
+                                  <div class="row3 col-md-8">
+                                    <a href="$" class="btn btn-primary float-left mb32 step-2">
+                                      <span class="fa fa-long-arrow-left" />
+                                      Back
+                                    </a>
+                                      <div class="gif">
+                                        <!-- submit button -->
+                                            
+                                                <button type="submit" class="gifbtn btn btn-primary float-right mb32">
+                                                Confirm
+                                                <span class="fa fa-long-arrow-right"/>
+                                                </button>
+                                                
+                                                  <!-- <div class="o_theme_install_loader_container position-fixed fixed-top fixed-left h-100 w-100 d-flex justify-content-center align-items-center">
+                                                  </div> -->
+                                                  
+                                              
+                                      </div>
+                                  </div>
+                                </div>
+                            </div>            
+                            <br/>
+                         </div>
+                      </div>
+                  </form>  
+                </div>
+                </div>
+            </t>
+    </template>
+</odoo>

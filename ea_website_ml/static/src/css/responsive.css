@@ -1,0 +1,53 @@
+@media only screen and (max-width: 1508px) {
+  feedbackform {
+    width: 100%;
+
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  .container {
+    margin: 0 10% 0 10%;
+  }
+}
+@media only screen and (max-width: 1503px) {
+  feedbackform {
+    width: 100%;
+  }
+  .container {
+    margin: 0 10% 0 10%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  feedbackform {
+    width: 100%;
+  }
+  .container {
+    margin: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  feedbackform {
+    width: 100%;
+  }
+  .container {
+    margin: 0 10% 0 10%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  feedbackform {
+    width: 100%;
+  }
+  .container {
+    margin: 0 10% 0 10%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  feedbackform {
+    width: 100%;
+  }
+  .container {
+    margin: 0 10% 0 10%;
+  }
+}

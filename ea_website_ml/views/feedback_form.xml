@@ -1,0 +1,35 @@
+<odoo>
+    <template id="feedback_form" name="feedback_from" inherit_id="web.frontend_layout">
+        <xpath expr="//div[@id='footer']"  position="before">
+            <div class="feedbackform">  
+                <form action="/builder/register/feedbackdata" method="post">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                    <div class="container ps-1">
+                        <h1 class="text-center">Do You like the Theme?</h1>
+                        <br/>
+                            <div id="id1" class="container theme_feedback">
+                                <section id="wrapper">
+                                    <div class="form-group col-12 s_website_form_submit row" data-name="Submit Button">
+                                        <div style="width: 100px;" class="s_website_form_label"/>
+                                        <button type="submit" class="ps-2 btn btn-primary s_website_form_send" value="yes">YES!!! Accept This Theme</button>
+                                        <div style="width: 400px;" class="s_website_form_label"/>
+                                        <a href="#" class="ps-3 btn btn-primary s_website_form_send ">No!! Reject This Theme</a>
+                                    </div>
+                                </section>
+                            </div>
+                    </div>
+                </form>
+                <form action="/builder/register/feedbackdata" method="post"> 
+                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                    <div class="ps-4 container rejection_data">
+                        <label class="col-form-label" for="feedback_no">Please Tell us what is it You don't Like?</label>
+                        <input type="text" id="feedback" name="feedback_data" class="form-control"/>
+                        <br/>
+                        <button type="submit" class="btn btn-primary btn-lg s_website_form_send">Submit</button> 
+                    </div> 
+                    <br/>     
+                </form> 
+            </div>
+        </xpath>
+    </template>
+</odoo>
